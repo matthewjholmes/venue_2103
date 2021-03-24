@@ -1,10 +1,14 @@
 class Venue
   attr_reader :name, :capacity, :patrons
 
-  def initialize(name, capacity, patrons)
+  def initialize(name, capacity)
     @name = name
     @capacity = capacity
-    @patrons = patrons
+    @patrons = []
+  end
+
+  def add_patron(patron_name)
+    @patrons << patron_name 
   end
 
 end

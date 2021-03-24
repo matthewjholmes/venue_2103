@@ -9,19 +9,19 @@ describe Venue do
     end
 
     it 'can read the name' do
-      
+
       venue = Venue.new('Bluebird', 4)
       expect(venue.name).to eq 'Bluebird'
     end
 
     it 'can read the capacity' do
-      skip
+
       venue = Venue.new('Bluebird', 4)
       expect(venue.capacity).to eq 4
     end
 
     it 'has no patrons by default' do
-      skip
+
       venue = Venue.new('Bluebird', 4)
       expect(venue.patrons).to eq []
     end
@@ -31,7 +31,6 @@ describe Venue do
 
   describe '#add_patron' do
     it 'returns a list of patrons' do
-      skip
       venue = Venue.new('Bluebird', 4)
       venue.add_patron('Mike')
       venue.add_patron('Megan')
